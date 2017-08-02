@@ -37,6 +37,10 @@ There is also a LibreOffice icon set:
 i3 will need to be installed (install all packages):    
 `pacman -S i3`
 
+## Rofi
+Rofi is used to launch applications, install it:
+`pacman -S rofi`
+
 ## Dunst
 Dunst needs to be installed for notifications:    
 `pacman -S dunst`
@@ -63,8 +67,22 @@ Also for the Python autocomplete to work:
 Coming soon   
 
 ## Even-better-ls
-Coming soon   
+Install using the script found on the gihub:    
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/illinoisjackson/even-better-ls/master/install.sh)"`
+
+Also needs patched fonts to work properly:    
+`pacman -S awesome-terminal-fonts`
+
+## Termite
+I use termite terminal, install it:   
+`pacman -S termite`
 
 ## Pywal
+Before Pywal can be installed pip must be installed:    
+`pacman -S python-pip`
+
+In addition it needs a few other dependencies:
+`pacman -S nitrogen feh`
+
 Pywal must be installed with pip and the proper directories must be made:   
 `mkdir -p ~/Pictures/Wallpapers &&  pip install pywal`
