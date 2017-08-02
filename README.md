@@ -1,9 +1,6 @@
 # Dotfiles
 These dotfiles use a technique found [here](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/).
 
-It is best practice to backup any pre-existing config files:
-`mkdir -p .config-backup`
-
 To get started clone the repositiory (into your home directory):
 `git clone --bare https://github.com/themagicteeth/dots $HOME/.dots`
 
