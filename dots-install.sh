@@ -1,4 +1,4 @@
-git clone --bare https://bitbucket.org/durdn/cfg.git $HOME/.cfg
+git clone --bare https://github.com/themagicteeth/dots.git $HOME/.dots
 function config {
    /usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME $@
 }
