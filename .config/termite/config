@@ -6,7 +6,7 @@ mouse_autohide = false
 allow_bold = true
 urgent_on_bell = true
 clickable_url = true
-font = Monospace 9
+# font = Monospace 9
 search_wrap = true
 
 # "system", "on" or "off"
@@ -16,13 +16,13 @@ cursor_blink = system
 cursor_shape = block
 
 # $BROWSER is used by default if set, with xdg-open as a fallback
-#browser = xdg-open
+browser = firefox-nightly
 
 # Hide links that are no longer valid in url select overlay mode
 filter_unmatched_urls = true
 
 [colors]
 # 20% background transparency (requires a compositor)
-background = rgba(63, 63, 63, 0.8)
+ background = rgba(63, 63, 63, 0.8)
 
 # vim: ft=dosini cms=#%s

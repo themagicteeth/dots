@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/pleb'
+let g:netrw_dirhist_2='/home/pleb/.config'
+let g:netrw_dirhist_3='/home/pleb/.config/grc'
+let g:netrw_dirhist_4='/home/pleb/.dots'
+let g:netrw_dirhist_5='/home/pleb'
+let g:netrw_dirhist_6='/home'
+let g:netrw_dirhist_7='/home/pleb'
+let g:netrw_dirhist_8='/home/pleb/.config/termite'
