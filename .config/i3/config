@@ -133,11 +133,10 @@ for_window [class="^.*"] border pixel 1
 
 exec --no-startup-id nm-applet
 exec --no-startup-id compton --config ~/.config/compton.conf -b
-exec --no-startup-id dunst &
 exec_always --no-startup-id killall polybar; polybar main
 exec xautolock -time 10 -locker '~/.config/i3/lock.sh' &
 
-bindsym $mod+w exec "wal -i ~/Pictures/Wallpapers -t -o wal-set"
+bindsym $mod+w exec "wal -i ${HOME}/Pictures/Wallpapers -o wal-set"
 
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
