@@ -225,7 +225,7 @@ user_pref("browser.urlbar.usepreloadedtopurls.enabled", false);
 // Disable location bar making speculative connections
 user_pref("browser.urlbar.speculativeConnect.enabled", false);
 // Disable location bar autocomplete
-user_pref("browser.urlbar.autocomplete.enabled", false);
+user_pref("browser.urlbar.autocomplete.enabled", true);
 // Disable location bar autofill
 user_pref("browser.urlbar.autoFill", false);
 user_pref("browser.urlbar.autoFill.typed", false);
