@@ -2,15 +2,6 @@
     font = Roboto 10
     
     allow_markup = yes
-    
-    # The format of the message.  Possible variables are:
-    #   %a  appname
-    #   %s  summary
-    #   %b  body
-    #   %i  iconname (including its path)
-    #   %I  iconname (without its path)
-    #   %p  progress value if set ([  0%] to [100%]) or nothing
-    # Markup is allowed
     format = "<b>%s</b>\n%b"
     
     sort = yes
@@ -25,7 +16,7 @@
     transparency = 0
     idle_threshold = 120
     monitor = 0
-    follow = mouse
+    follow = none 
     sticky_history = yes
     history_length = 20
     show_indicators = yes
@@ -35,30 +26,6 @@
     horizontal_padding = 20
     separator_color = frame
     startup_notification = false
-    # dmenu = /usr/bin/dmenu -p dunst:
     browser = /usr/bin/firefox-nightly
-    icon_position = off
-    icon_folders = /usr/share/icons/Paper/16x16/status/:/usr/share/icons/Paper/16x16/devices/
-
-[frame]
-    width = 5
-    color = "#cc241d"
-
-[shortcuts]
-    close = ctrl+space
-    close_all = ctrl+shift+space
-
-[urgency_low]
-    background = "#2C3E50"
-    foreground = "#ECF0F1"
-    timeout = 3
-
-[urgency_normal]
-    background = "#2C3E50"
-    foreground = "#3498DB"
-    timeout = 3
-
-[urgency_critical]
-    background = "#2C3E50"
-    foreground = "#E74C3C"
-    timeout = 3
+    icon_position = on
+    icon_folders = /usr/share/icons/Papirus/16x16/status/:/usr/share/icons/Papirus/16x16/devices/
