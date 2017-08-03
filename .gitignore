@@ -1,3 +1,6 @@
 .dots
 .config/nvim/files
 .config/nvim/cache
+.config/nvim/plugged
+.config/nvim/session
+.config/nvim/.netrwhist
