@@ -1,0 +1,16 @@
+@import url('file:///home/pleb/.cache/wal/colors.css');
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.tabbrowser-tab[usercontextid] .tab-line{background-color:var(--identity-tab-color)!important;}
+photonpanelmultiview .panel-subview-body{margin:0!important}
+#appMenu-zoom-controls, #appMenu-zoom-controls+toolbarseparator, #appMenu-edit-controls,#appMenu-edit-controls+toolbarseparator{display:none}
+#appMenu-popup .panel-arrowcontent{margin:4px 4px 0!important;padding:0!important}
+#appMenu-popup .panel-subview-body{margin:-6px 0}
+#appMenu-mainView{padding:0!important}
+photonpanelmultiview .PanelUI-subView .toolbaritem-combined-buttons>.subviewbutton:not(#appMenu-zoomReset-button):not(#appMenu-fxa-icon){padding:10px!important}
+#appMenu-quit-button{padding:10px!important;margin-top:-6px!important}
+#appMenu-fxa-container{margin-bottom:-6px;margin-inline-end:0!important}
+#appMenu-fxa-container toolbarseparator[orient='vertical'],#appMenu-zoom-controls toolbarseparator[orient='vertical']{margin-inline-start:0!important;margin-inline-end:0!important}
+#appMenu-fxa-label{padding:10px 28px!important}
+#appMenu-fxa-avatar{border-radius:50%}
+#appMenu-fxa-icon{padding:11px 11px 10px 10px!important}
