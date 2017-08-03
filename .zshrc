@@ -18,7 +18,6 @@ LS_COLORS=$(ls_colors_generator)
 run_ls() { ls-i --color=auto -w $(tput cols) "$@" }
 run_dir() { dir-i --color=auto -w $(tput cols) "$@" }
 run_vdir() { vdir-i --color=auto -w $(tput cols) "$@" }
-
 #------------------------------
 # History stuff
 #------------------------------
@@ -46,6 +45,7 @@ bindkey -e
 #------------------------------
 # Comp stuff
 #------------------------------
+zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 autoload -Uz compinit
 compinit
 zstyle :compinstall filename '/home/pleb/.zshrc'
