@@ -6,8 +6,3 @@ Xft.hinting:                false
 Xft.hintstyle:              hintslight
 Xft.rgba:                   rgb
 Xft.lcdfilter:              lcddefault
-
-! Rofi
-rofi.font:                  Roboto Light 15
-! Line height
-rofi.eh:                    2
