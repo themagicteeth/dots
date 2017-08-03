@@ -1,8 +1,0 @@
-@import url('file:///home/pleb/.cache/wal/colors.css');
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-
-weee
-#nav-bar {
-   background-image: var(--wallpaper);
-   color: var(--color7) !important;
-}
