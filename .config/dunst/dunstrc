@@ -1,9 +1,7 @@
 [global]
     font = Roboto 10
-    
-    allow_markup = yes
+    markup = no 
     format = "<b>%s</b>\n%b"
-    
     sort = yes
     indicate_hidden = yes
     alignment = left
@@ -27,5 +25,5 @@
     separator_color = frame
     startup_notification = false
     browser = /usr/bin/firefox-nightly
-    icon_position = on
-    icon_folders = /usr/share/icons/Papirus/16x16/status/:/usr/share/icons/Papirus/16x16/devices/
+    /* icon_position = on */
+    /* icon_folders = /usr/share/icons/Papirus/16x16/status/:/usr/share/icons/Papirus/16x16/devices/ */

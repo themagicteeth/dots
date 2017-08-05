@@ -31,6 +31,7 @@ SAVEHIST=1000
 export BROWSER="firefox-nightly"
 export EDITOR="nvim"
 WORKON_HOME=~/.virtualenv
+PATH="${PATH}:${HOME}/.local/bin"
 
 #-----------------------------
 # Dircolors
@@ -102,4 +103,5 @@ alias tarx="tar -xvf"
 alias cd..="cd .."
 alias cd.="cd .."
 alias ..="cd .."
+alias nvim i3="nvim ~/.config/i3/config"
 alias config='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
