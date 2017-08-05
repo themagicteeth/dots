@@ -1,0 +1,1 @@
+{"URLS":[],"daysToKeep":60,"historyDeletedCounterTotal":0,"keepHistorySetting":false,"statLoggingSetting":true,"showVisitsInIconSetting":true}

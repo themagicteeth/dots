@@ -1,0 +1,1 @@
+{"contextualIdentitiesEnabledSetting":false,"delayBeforeClean":1,"activeMode":true,"statLoggingSetting":true,"showNumberOfCookiesInIconSetting":true,"notifyCookieCleanUpSetting":true,"cookieCleanUpOnStartSetting":false,"enableGlobalSubdomainSetting":true,"cookieDeletedCounterTotal":240,"defaultWhiteList":["searx.me"],"defaultWhiteList-Grey":[]}
