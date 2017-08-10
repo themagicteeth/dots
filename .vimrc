@@ -9,6 +9,13 @@ endif
 
 call plug#begin('~/.config/nvim/plugged')
 
+" Plug 'termhn/i3-vim-nav'
+" i3 integration
+nnoremap <silent> <c-l> :call Focus('right', 'l')<CR>
+nnoremap <silent> <c-h> :call Focus('left', 'h')<CR>
+nnoremap <silent> <c-k> :call Focus('up', 'k')<CR>
+nnoremap <silent> <c-j> :call Focus('down', 'j')<CR>
+
 Plug 'dylanaraps/wal'
 
 Plug 'gregsexton/matchtag'
@@ -51,9 +58,14 @@ let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 
 Plug 'sheerun/vim-polyglot'
 
-Plug 'tpope/vim-fugitive'
+Plug 'posva/vim-vue'
 
-Plug 'airblade/vim-gitgutter'
+" Plug 'tpope/vim-fugitive'
+
+Plug 'mattn/emmet-vim'
+" let g:user_emmet_mode='a'    "enable all function in all mode.
+
+" Plug 'airblade/vim-gitgutter'
 
 Plug 'luochen1990/rainbow'
 let g:rainbow_active = 1
@@ -68,13 +80,13 @@ let g:deoplete#enable_at_startup = 1
 
 Plug 'zchee/deoplete-jedi', { 'for': 'python'}
 
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-let g:tern_request_timeout = 1
-let g:tern#filetypes = [
-                \ 'jsx',
-                \ 'javascript.jsx',
-                \ 'vue'
-                \ ]
+" Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+" let g:tern_request_timeout = 1
+" let g:tern#filetypes = [
+"                 \ 'jsx',
+"                 \ 'javascript.jsx',
+"                 \ 'vue'
+"                 \ ]
 
 "Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 

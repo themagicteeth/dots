@@ -323,7 +323,7 @@ label-separator = " » "
 
 ; lock
 menu-0-0 = 
-menu-0-0-exec = i3fuzzylock 
+menu-0-0-exec =  i3fuzzylock 
 ;menu-0-0-foreground = ${colors.lime}
 ; sleep
 menu-0-1 = 

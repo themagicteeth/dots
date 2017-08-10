@@ -34,6 +34,19 @@ WORKON_HOME=~/.virtualenv
 PATH="${PATH}:${HOME}/.local/bin"
 
 #-----------------------------
+# Directories
+#-----------------------------
+setopt auto_cd
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt pushd_silent
+setopt pushd_to_home
+
+
+setopt noflowcontrol
+setopt nobeep
+
+#-----------------------------
 # Dircolors
 #-----------------------------
 export LS_COLORS
@@ -47,9 +60,21 @@ bindkey -e
 # Comp stuff
 #------------------------------
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
+# Use cache
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+# Fuzzy matching for mistyped completions
+zstyle ':completion:*' completer _complete _match _approximate
+zstyle ':completion:*:match:*' original only
+zstyle ':completion:*:approximate:*' max-errors 1 numeric
+fpath=(~/.zshfuncs $fpath)
 autoload -Uz compinit
 compinit
 zstyle :compinstall filename '/home/pleb/.zshrc'
+setopt nonomatch
+setopt completeinword
+setopt hash_list_all
+setopt rc_quotes
 
 #------------------------------
 # Prompt
@@ -97,11 +122,36 @@ alias dir="run_dir"
 alias vdir="run_vdir"
 alias ll="ls -lh"
 alias lsa="ls -a"
-alias spm="sudo pacman"
 alias vim="nvim"
 alias tarx="tar -xvf"
 alias cd..="cd .."
 alias cd.="cd .."
 alias ..="cd .."
-alias nvim i3="nvim ~/.config/i3/config"
 alias config='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+alias mkpkg='makepkg -sri'
+alias top=htop
+alias ...='../..'
+alias ....='../../..'
+alias .....='../../../..'
+
+#------------------------------
+# Functions 
+#------------------------------
+
+# Makes a directory and changes to it.
+function mkdcd {
+  [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1"
+}
+
+# Changes to a directory and lists its contents.
+function cdls {
+  builtin cd "$argv[-1]" && ls "${(@)argv[1,-2]}"
+}
+
+# Finds files and executes a command on them.
+function find-exec {
+  find . -type f -iname "*${1:-}*" -exec "${2:-file}" '{}' \;
+}
+
+
+

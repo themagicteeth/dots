@@ -6,3 +6,17 @@ Xft.hinting:                false
 Xft.hintstyle:              hintslight
 Xft.rgba:                   rgb
 Xft.lcdfilter:              lcddefault
+
+rofi.width: 100
+rofi.padding: 600
+rofi.lines: 3
+rofi.font: Roboto 12
+rofi.eh: 2
+rofi.separator-style: none
+rofi.hide-scrollbar: true
+/* rofi.fake-background: screenshot */
+rofi.fixed-num-lines: true
+rofi.opacity: 85
+rofi.bw: 0
+! rofi.location: 1
+! bindsym $mod+Shift+s sticky toggle
