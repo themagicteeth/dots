@@ -718,3 +718,5 @@ user_pref("extensions.webextensions.remote", true);
 // Search bar
 user_pref("browser.search.openintab", true);
 user_pref("browser.search.reset.enabled", false);
+// Lock dark theme
+user_pref("lightweightThemes.selectedThemeID", "firefox-compact-dark@mozilla.org")

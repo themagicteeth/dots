@@ -1,7 +1,48 @@
 @import url('file:///home/pleb/.cache/wal/colors.css');
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-.tabbrowser-tab[usercontextid] .tab-line{background-color:var(--identity-tab-color)!important;}
+
+:root {
+    --ui-background: var(--background);
+
+  --chrome-background-color: var(--background) !important; /*includes tabstrip background*/
+  --chrome-secondary-background-color: var(--background) !important; /*includes toolbar, urlbar*/
+  --url-and-searchbar-background-color: var(--background) !important;
+  --chrome-selection-background-color: var(--color1) !important;
+  --chrome-nav-bar-controls-border-color: rgba(255, 255, 255, 0.07) !important; /*urlbar border*/
+
+    /* TAB VARIABLES */
+    --bg-light: #222D32; --bg-dark: #222D32;
+    --fg-light: #0CBFD6; --fg-dark: #A6B0B4;
+    --tab-triangle-correction: -1px;
+    --tab-height: 24px; --tab-icon-size: 0px; --tab-strip-margin: 0px; --tab-overlap: -5px;
+    --tab-fonts: "Ubuntu" --tab-font-size: 10pt;
+    --tab-text-align: left; /* left | center | right */
+    --tab-triangle: block;  /* block | none */
+
+    /* URL VARIABLES */
+    --url-background: var(--bg-light); --url-color: var(--fg-dark);
+    --url-height: 24px; --url-right-margin: 6px; --url-bottom-margin-fix: 0;
+    --url-fonts: "Ubuntu"; --url-font-size: 8pt;
+    --url-text-align: center; /* left | center | right */
+    --url-position: absolute; /* absolute == top (under tabs) || fixed == bottom of browser */
+}
+
+
+*
+{
+  box-sizing: border-box !important; 
+}
+
+  #main-window[sizemode="normal"]
+, #main-window[sizemode="maximized"] 
+    {
+      margin-bottom: 0 !important;
+    }
+
+
+
+/* Adjust the hamburger menu */
 photonpanelmultiview .panel-subview-body{margin:0!important}
 #appMenu-zoom-controls, #appMenu-zoom-controls+toolbarseparator, #appMenu-edit-controls,#appMenu-edit-controls+toolbarseparator{display:none}
 #appMenu-popup .panel-arrowcontent{margin:4px 4px 0!important;padding:0!important}
@@ -14,3 +55,170 @@ photonpanelmultiview .PanelUI-subView .toolbaritem-combined-buttons>.subviewbutt
 #appMenu-fxa-label{padding:10px 28px!important}
 #appMenu-fxa-avatar{border-radius:50%}
 #appMenu-fxa-icon{padding:11px 11px 10px 10px!important}
+
+/************* 
+ * Navbar 
+ *************/
+/* Hide buttons */
+  #back-button[disabled="true"]
+, #forward-button[disabled="true"]
+, #stop-button[disabled="true"]
+, #home-button
+, #pocket-button
+, #loop-button
+, #social-share-button
+{
+  display: none !important; 
+}
+
+
+/************* 
+ * Tab bar
+ *************/
+/* Tabs on bottom */
+#TabsToolbar { -moz-box-ordinal-group: 2; }
+
+/* Remove hover background from new tab button */
+.tabs-newtab-button { display: none !important; }
+
+
+/************* 
+* URL bar
+*************/
+  #urlbar-container 
+    { 
+    height: 30px !important; 
+    }
+
+
+  #urlbar 
+    {
+     height:10px !important;
+     margin-bottom:-4px !important;
+     overflow: hidden !important;
+     color: var(--foreground) !important;
+     font-weight: bold;
+     border-color: var(--background) !important;
+     font-size: 18px !important;
+    }
+
+  #identity-icon-labels
+, .autocomplete-history-dropmarker
+, #urlbar-go-button
+, #go-button-stack
+, #go-button
+, #star-button 
+    {
+     display: none !important; 
+    }
+ 
+.tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {
+min-width: 30px !important;
+max-width: 100% !important;
+}
+/************* 
+ * URL bar suggestions
+ *************/
+#PopupAutoCompleteRichResult {
+  border-color: var(--background) !important;
+  background-color: var(--background) !important;
+  padding: 0 !important;
+}
+
+.autocomplete-richlistbox {
+  color: var(--foreground) !important;
+  background: var(--background) !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+
+.autocomplete-richlistbox > scrollbox,
+.autocomplete-richlistbox > richlistitem {
+  overflow: hidden !important;
+  padding: 0 !important;
+}
+
+.autocomplete-richlistitem[selected="true"],
+.autocomplete-richlistitem[selected="true"] * {
+  color: var(--foreground) !important;
+  font-weight: bold !important;
+  background: var(--color1) !important;
+  font-size: 16px !important;
+  overflow: hidden !important;
+}
+
+.ac-title {
+  color(--foreground);
+  overflow: hidden !important;
+}
+
+.ac-url-text, 
+.ac-action,
+.ac-separator {
+  overflow: hidden !important;
+  color: var(--color2) !important;
+}
+
+
+/************* 
+ * Search bar
+ *************/
+  #search-container
+, .search-go-button-stack
+, .search-go-button 
+    { 
+      display: none !important; 
+    }
+
+/************* 
+ * Tabs
+ *************/
+/* Hide tab seperator */
+  .tabbrowser-tabs * 
+    {
+      border: none !important;
+      background-image: none !important;
+    }
+
+  tabs#tabbrowser-tabs, tabs#tabbrowser-tabs * 
+    {
+      border: none !important;
+      background-image: none !important;
+    }
+
+/* Sets tab line */
+  .tab-line 
+    {
+      background-color:var(--color4)!important;
+      margin-top: 27px !important;
+      padding: 2px !important;
+    }
+
+  .tabbrowser-tabs .tab-text 
+    {
+      color: var(--color7) !important;
+    }
+
+
+/* No favicons for unpinned tabs */
+  .tab-icon-image
+, .tab-icon-image:not([pinned])
+    {
+      display: none !important; 
+    }
+
+
+/* Stretch tab bar to full width*/
+.tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {
+  min-width: 20px !important;
+  max-width: 100% !important;
+}
+
+/* Show close button on hover only*/
+.tab-close-button { visibility: hidden !important; }
+tab:not([pinned]):hover .tab-close-button { visibility: visible !important; }
+
+
