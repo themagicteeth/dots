@@ -1,0 +1,88 @@
+
+referrer-spoof: * true
+referrer-spoof: behind-the-scene false
+ua-spoof: behind-the-scene false
+* * * block
+* * cookie block
+* * frame block
+
+* secure.gravatar.com * block
+* 0.gravatar.com * block
+* 1.gravatar.com * block
+* 2.gravatar.com * block
+
+* facebook.com * block
+* facebook.net * block
+
+* fonts.googleapis.com * block
+
+* ajax.aspnetcdn.com script allow
+* ajax.googleapis.com script allow
+* ajax.microsoft.com script allow
+* cdn.jsdelivr.net script allow
+* cdnjs.cloudflare.com script allow
+* code.jquery.com script allow
+* lib.sinaapp.com script allow
+* libs.baidu.com script allow
+* upcdn.b0.upaiyun.com script allow
+* yandex.st script allow
+* yastatic.net script allow
+* typography.com * block
+
+ethosdistro.com zigzag.ethosdistro.com script allow
+
+vimawesome.com cdn.ravenjs.com script allow
+vimawesome.com fonts.googleapis.com css allow
+vimawesome.com vimawesome.com script allow
+vimawesome.com vimawesome.com xhr allow
+
+searx.me * image allow
+searx.me searx.me cookie allow
+searx.me searx.me script allow
+searx.me searx.me xhr allow
+
+firefox.com accounts-static.cdn.mozilla.net css allow
+firefox.com accounts-static.cdn.mozilla.net image allow
+firefox.com accounts-static.cdn.mozilla.net script allow
+firefox.com accounts.firefox.com cookie allow
+firefox.com accounts.firefox.com other allow
+firefox.com accounts.firefox.com xhr allow
+
+reddit.com a.thumbs.redditmedia.com css allow
+reddit.com a.thumbs.redditmedia.com image allow
+reddit.com b.thumbs.redditmedia.com css allow
+reddit.com b.thumbs.redditmedia.com image allow
+reddit.com e.reddit.com xhr allow
+reddit.com reddit.com cookie allow
+reddit.com www.reddit.com script allow
+reddit.com www.reddit.com xhr allow
+reddit.com www.redditstatic.com css allow
+reddit.com www.redditstatic.com image allow
+reddit.com www.redditstatic.com script allow
+
+terminal.sexy terminal.sexy script allow
+terminal.sexy terminal.sexy xhr allow
+
+mozilla.org addons.cdn.mozilla.net css allow
+mozilla.org addons.cdn.mozilla.net image allow
+mozilla.org addons.cdn.mozilla.net script allow
+mozilla.org addons.mozilla.org xhr allow
+mozilla.org developer.cdn.mozilla.net css allow
+mozilla.org google.com * block
+mozilla.org support.cdn.mozilla.net css allow
+mozilla.org support.cdn.mozilla.net image allow
+
+github.com assets-cdn.github.com script allow
+github.com avatars0.githubusercontent.com * block
+github.com github.com cookie allow
+github.com github.com xhr allow
+
+fontawesome.io ghbtns.com * block
+fontawesome.io kickstarter.com * block
+fontawesome.io twitter.com * block
+
+wikipedia.org en.wikipedia.org script allow
+wikipedia.org wikimedia.org image allow
+
+
+
