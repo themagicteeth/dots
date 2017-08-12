@@ -18,6 +18,7 @@ LS_COLORS=$(ls_colors_generator)
 run_ls() { ls-i --color=auto -w $(tput cols) "$@" }
 run_dir() { dir-i --color=auto -w $(tput cols) "$@" }
 run_vdir() { vdir-i --color=auto -w $(tput cols) "$@" }
+
 #------------------------------
 # History stuff
 #------------------------------
@@ -41,7 +42,6 @@ setopt auto_pushd
 setopt pushd_ignore_dups
 setopt pushd_silent
 setopt pushd_to_home
-
 
 setopt noflowcontrol
 setopt nobeep
@@ -129,7 +129,8 @@ alias cd.="cd .."
 alias ..="cd .."
 alias config='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 alias mkpkg='makepkg -sri'
-alias top=htop
+alias top='htop'
+alias s='sudo'
 alias ...='../..'
 alias ....='../../..'
 alias .....='../../../..'
