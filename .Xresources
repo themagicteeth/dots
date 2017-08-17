@@ -19,3 +19,56 @@ rofi.fixed-num-lines: true
 rofi.bw: 0
 ! rofi.location: 1
 ! bindsym $mod+Shift+s sticky toggle
+!
+!
+!
+!gtk-color-scheme = "base_color:#FFFFFF\nbg_color:#FAFBFC"
+gtk-color-scheme = "text_color:#263238\nfg_color:#263238"
+gtk-color-scheme = "selected_bg_color:#00BCD4\nselected_fg_color:#FFFFFF"
+gtk-color-scheme = "tooltip_bg_color:#222D32\ntooltip_fg_color:#CFD8DC"
+gtk-color-scheme = "link_color:#03A9F4\nvisited_link_color:#9C27B0"
+gtk-color-scheme = "inverted_dark_color:#222D32\ninverted_fg_color:#CFD8DC"
+gtk-color-scheme = "scroll_slider_color:#A5AAAD\nscroll_slider_prelight_color:#C3C6C8"
+gtk-color-scheme = "panel_bg_color:#13191C"
+gtk-color-scheme = "secondary_dark_color:#F7F9F9"
+gtk-color-scheme = "solid_white:#FFFFFF"
+gtk-color-scheme = "accent_color:#4DB6AC"
+!
+! special
+*.foreground:   #a1b0b8
+*.background:   #263238
+*.cursorColor:  #a1b0b8
+
+! black
+*.color0:       #252525
+*.color8:       #252525
+
+! red
+*.color1:       #ff5252
+*.color9:       #ff5252
+
+! green
+*.color2:       #c3d82c
+*.color10:      #c3d82c
+
+! yellow
+*.color3:       #ffd740
+*.color11:      #ffd740
+
+! blue
+*.color4:       #40c4ff
+*.color12:      #40c4ff
+
+! magenta
+*.color5:       #ff4081
+*.color13:      #ff4081
+
+! cyan
+*.color6:       #18ffff
+*.color14:      #18ffff
+
+! white
+*.color7:       #f5f5f5
+*.color15:      #f5f5f5
+
+! 
